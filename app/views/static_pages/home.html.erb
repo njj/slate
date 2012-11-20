@@ -5,8 +5,18 @@
   </div>
   <div class="six columns">
     <section id="login">
-    <input type="text" id="username" placeholder="Username"/>
-    <input type="text" id="password" placeholder="Password"/>
-    <button type="submit">Sign In</button>
+       <%= form_for(:session, url: sessions_path) do |f| %>
+
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+
+        <%= f.submit "Sign In", class: "button" %>
+
+      <% end %>
+
+    <small>New user? <%= link_to "Sign up now!", signup_path %></small>
     </section>
   </div>

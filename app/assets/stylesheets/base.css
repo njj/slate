@@ -52,7 +52,7 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: #fff;
+		background: #FAFAFA;
 		font: 400 14px/1.6 "Open Sans", sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -227,7 +227,7 @@
 	label,
 	legend {
 		display: block;
-		font-weight: bold;
+		font-weight: none;
 		font-size: 13px;  }
 	select {
 		width: 220px; }
@@ -303,7 +303,7 @@
 	nav a {
 	  margin: 0 5px;
 	  padding-right: 15px;
-	  border-right: 1px dotted #eee;
+	  border-right: 1px dotted #666;
 	}
 
 	nav a:last-child {
@@ -322,9 +322,7 @@
 	  margin-right: 10px;
 	}
 
-/*
-Animate.css - http://daneden.me/animate
-*/
+	/* Animate.css - http://daneden.me/animate */
 
 	.animated {
 		-webkit-animation-fill-mode: both;
@@ -402,7 +400,7 @@ Animate.css - http://daneden.me/animate
 		animation-name: fadeInDown;
 	}
 
-	/* Errors */
+	/* Errors & Alerts */
 	#error_explanation {
 	  color: #f00;
 	  ul {
